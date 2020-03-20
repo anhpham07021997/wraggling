@@ -12,8 +12,8 @@ This project is my practice for data wraggling including:
   - txt
 - Assesing data 
 - Cleaning data
--Storing, analyzing, and visualizing your wrangled data
--Reporting
+- Storing, analyzing, and visualizing  wrangled data
+- Reporting
 ### Related files
 - wrangle_act.ipynb: code for gathering, assessing, cleaning, analyzing, and visualizing data
 - wrangle_report.pdf or wrangle_report.html: documentation for data wrangling steps: gather, assess, and clean
