@@ -24,3 +24,5 @@ This project is my practice for data wraggling including:
 - image_predictions.tsv: file downloaded programmatically
 - tweet_json.txt: file constructed via API
 - twitter_archive_master.csv: combined and cleaned data
+### License 
+MIT
