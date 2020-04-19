@@ -40,6 +40,34 @@ etc.
 - The fact that the rating numerators are greater than the denominators does not need to be cleaned.
 - **You do not need to gather the tweets beyond August 1st, 2017**
 
+## Clean
+
+### Tidiness
+
+#### Archive data 
+
+- 1)`text` are mixed between texts and http link=> seperate content of `text` 
+- 2)`doggo` `floofer`, `pupper`,`puppo` are redundant=> melt data combine to 1 columns
+- 3)`rating_numerator`,`rating_denominator` are redundant => combine to 1 columns named `rating`
+need to merge 3 tables
+
+### Quality
+
+#### Archive data 
+- 1)`timestamp' is not datatime=> change to time data 
+- 2)`timestamp` only need data from 2017-present => drop 
+- 3)`name` has strange name like 'a' 'an' 'the' 'by'  quite,actually, just,one,his,my,very, not=>replace with NONE
+- 4)missing record on `in reply to user id/user_status`,`retweeted_status_id/user_id`,`retweeted_status_timestamp` are NA=> drop 
+- 5)`expand_url` NA - mean no tweet you retweet => drop to combine: 3 tables 
+- 6)OliviÃ©r, old, RalphÃ©, AmÃ©lie,GÃ²rdÃ³n,,FrÃ¶nq,getting, DevÃ³n=> change to proper names
+- 7)replace the source content by ‘Twitter for iphone’, ‘Vine - Make a Scene’, ‘Twitter Web Client’, and ‘TweetDeck’.
+- 8) remove +000 in timestamp data 
+
+
+####  predict data
+- 9)columns when [p1,p2,p3]==True / False => need to drop 
+- 10)Capitalize first Letter of name for consitance, replace '_' with space , add space in name of bread in p1 p2 p3 
+
 
 
 ### Library
