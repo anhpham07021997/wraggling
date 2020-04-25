@@ -57,10 +57,12 @@ etc.
 ## Quality
 
 ### Archive data 
--  1)missing record on `in reply to user id/user_status`,`retweeted_status_id/user_id`,`retweeted_status_timestamp` are NA=> drop 
-- 2) remove +000 in `imestamp` data 
 
-- 3) `timestampt` is not datatime=> change to time data 
+- 1)missing record on `in reply to user id/user_status`,`retweeted_status_id/user_id`,`retweeted_status_timestamp` are NA=> drop 
+
+- 2)remove +000 in `imestamp` data 
+
+- 3)`timestampt` is not datatime=> change to time data 
 
 - 4)`name` has strange name like 'a' 'an' 'the' 'by'  quite,actually, just,one,his,my,very, not=>replace with NONE
 
